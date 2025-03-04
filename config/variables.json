@@ -1,0 +1,19 @@
+{
+  "stock_etl_config": {
+    "stock_symbols": ["AAPL", "MSFT", "GOOGL", "AMZN", "META", "TSLA", "NVDA", "JPM", "V", "DIS"],
+    "gcs_bucket": "stock-etl-data-bucket",
+    "bigquery_dataset": "stock_market_data",
+    "bigquery_table": "daily_stock_prices",
+    "backfill_days": 30,
+    "data_freshness_threshold_hours": 24,
+    "notification_email": "mail@example.com"
+  },
+  "alpha_vantage_api_key": "YOUR_ALPHA_VANTAGE_API_KEY",
+  "etl_monitoring": {
+    "enable_alerts": true,
+    "error_threshold": 5,
+    "data_volume_threshold_mb": 1.5,
+    "quality_score_threshold": 0.95
+  },
+  "environment": "development"
+}
