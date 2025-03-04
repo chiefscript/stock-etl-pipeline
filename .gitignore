@@ -121,6 +121,9 @@ ipython_config.py
 __pypackages__/
 
 # Celery stuff
+.python-version
+
+# celery beat schedule file
 celerybeat-schedule
 celerybeat.pid
 
@@ -129,6 +132,10 @@ celerybeat.pid
 
 # Environments
 .env
+.env.local
+.env.test
+.env.stage
+.env.prod
 .venv
 env/
 venv/
@@ -153,9 +160,14 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+# SQLite
+dev.sqlite
 
 # pytype static type analyzer
 .pytype/
+# Editors
+.idea/
+.vscode/
 
 # Cython debug symbols
 cython_debug/
@@ -169,3 +181,13 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+# terrafform
+.terraform/
+.terraform.lock.hcl
+terraform.tfstate
+
+# other
+static/
+.DS_Store
+propa-api-venv/
+client_secret.json
